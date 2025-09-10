@@ -10,9 +10,9 @@ How to reproduce:
 
 To run the experiment supporting this claim, first change the directory to ./Claims/Claim1/. You can then reproduce this experiment in one of two ways:  
 
-1. From the command line, run: bash ./run\_E\_1.sh  to execute the experiment directly.  
+1. From the command line, run: bash ./run_E_1.sh  to execute the experiment directly.  
 
-2. Alternatively, in Google Colab, run:  !bash ./run\_E\_1.sh  to execute the experiment.
+2. Alternatively, in Google Colab, run:  !bash ./run_E_1.sh  to execute the experiment.
 
 
 
