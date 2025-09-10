@@ -7,13 +7,11 @@ This claim concerns the trend shown in Figure~7. Across all settings and scenari
 
 How to reproduce: 
 
-You can reproduce this experiment in one of two ways:  
+To run the experiment supporting this claim, first change the directory to ./Claims/Claim3/. You can then reproduce this experiment in one of two ways:  
 
-1. From the command line, run: bash ./Claims/Claim3/run_E_3.sh to execute the experiment directly.  
+1. From the command line, run: bash ./run_E_3.sh  to execute the experiment directly.  
 
-2. Alternatively, in Google Colab, open Main.py and run it once. When prompted for an input value, enter 7.  
-
-After execution, the results will be saved as Fig_7a.png, Fig_7b.png, Fig_7c.png, and Fig_7d.png in the artifact/Figures/ directory.  
+2. Alternatively, in Google Colab, run:  !bash ./run_E3.sh  to execute the experiment.
 
 
 
