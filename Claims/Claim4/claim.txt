@@ -1,0 +1,30 @@
+
+Claim 4:
+
+This claim concerns the trend shown in Figure 8. Across all settings and scenarios, when the variable on the x-axis (the privacy parameter \( \varepsilon \)) increases, the fraction of corrupted paths (FCP) shown on the y-axis increases. This claim is supported by Experiment E4, which generated Figure 8 and demonstrates this trend.
+
+
+
+How to reproduce: 
+
+You can reproduce this experiment in one of two ways:  
+
+1. From the command line, run:  ./Claims/Claim4/run_E_4.sh to execute the experiment directly.  
+
+2. Alternatively, in Google Colab, open Main.py and run it once. When prompted for an input value, enter 8.  
+
+After execution, the results will be saved as Fig_8a.png, Fig_8b.png, Fig_8c.png, and Fig_8d.png in the artifact/Figures/ directory.  
+
+
+
+
+
+Verification:
+
+You can compare the results with Figure 8 in the paper or with the pre-generated figures provided in Claims/Claim4/expected/. The latter is preferable since it was produced using the current artifact with a reduced number of iterations, yielding outputs more consistent with those obtained when running the artifact.  
+
+
+
+Runtime:
+
+This experiment requires less than 10 minutes to complete.
