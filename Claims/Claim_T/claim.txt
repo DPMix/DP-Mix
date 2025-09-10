@@ -7,7 +7,7 @@ How to reproduce:
 
 You can reproduce this experiment in one of two ways:  
 
-1. From the command line, run:   ./Claims/Claim_T/run_E_T.sh to execute the experiment directly.  
+1. From the command line, run:  bash ./Claims/Claim_T/run_E_T.sh to execute the experiment directly.  
 
 2. Alternatively, in Google Colab, open Main.py and run it once. When prompted for an input value, enter 10.  
 
