@@ -7,13 +7,11 @@ This claim concerns the trend shown in Figure 8. Across all settings and scenari
 
 How to reproduce: 
 
-You can reproduce this experiment in one of two ways:  
+To run the experiment supporting this claim, first change the directory to ./Claims/Claim5/. You can then reproduce this experiment in one of two ways:  
 
-1. From the command line, run: bash ./Claims/Claim5/run_E_5.sh to execute the experiment directly.  
+1. From the command line, run: bash ./run_E_5.sh  to execute the experiment directly.  
 
-2. Alternatively, in Google Colab, open Main.py and run it once. When prompted for an input value, enter 9.  
-
-After execution, the results will be saved as Fig_9a.png, Fig_9b.png, Fig_9c.png, and Fig_9d.png in the artifact/Figures/ directory.  
+2. Alternatively, in Google Colab, run:  !bash ./run_E5.sh  to execute the experiment.
 
 
 
