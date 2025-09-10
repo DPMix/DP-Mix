@@ -13,7 +13,7 @@ To run the experiment supporting this claim, first change the directory to ./Cla
 
 1. From the command line, run: bash ./run_E_2.sh  to execute the experiment directly.  
 
-2. Alternatively, in Google Colab, run:  !bash ./run_E2.sh  to execute the experiment.
+2. Alternatively, in Google Colab, run:  !bash ./run_E_2.sh  to execute the experiment.
 
 
 
