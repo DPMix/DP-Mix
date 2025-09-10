@@ -1502,7 +1502,7 @@ class CirMixNet(object):
         return data3
                          
 
-    def Basic_JAR(self,Iterations,File_Path=''):
+    def Basic_JAR(self,Iterations):
         import numpy as np
         import pickle
         from Routing import Routing
@@ -1530,12 +1530,6 @@ class CirMixNet(object):
             
             data3[typ] = [[Medd(x1),Medd(y1)],[Medd(x2),Medd(y2)]]
 
-            
-            
-        with open(File_Path + '/Basic_EXP.pkl','wb') as file:
-
-            pickle.dump(data3, file)          
-            
         return data3
     
     
