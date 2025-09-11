@@ -24,7 +24,8 @@ However, to install all requirements automatically, you only need to run the fol
 `bash install.sh`
 
 ## Hardware Requirements
-The code has been tested to run on standard hardware with 16 GB of RAM, 8 cores, and 50 GB of hard disk storage. Alternatively, you can use Google Colab to run this application. For this, you will need a Google account. Once signed in, you can clone the Git repository for free and start running the code based on the expected structure.
+The code has been tested on standard hardware with 16\,GB of RAM, 8 cores, and 50\,GB of available disk space. Alternatively, the artifact can be executed on Google Colab. To do so, you will need a Google account. Once signed in, you can clone the Git repository and run the code for free by following the instructions provided below.
+
 
 
 
