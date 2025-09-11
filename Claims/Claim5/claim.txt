@@ -1,7 +1,8 @@
 
 Claim 5:
 
-This claim concerns the trend shown in Figure 8. Across all settings and scenarios, when the variable on the x-axis (the adversary budget C/N) increases, the fraction of corrupted paths (FCP) shown on the y-axis increases. This claim is supported by Experiment E5, which generated Figure 9 and demonstrates this trend.
+This claim concerns the trend shown in Figure 8. Across all settings and scenarios, when the variable on the x-axis (the adversary budget C/N) increases, 
+the fraction of corrupted paths (FCP) shown on the y-axis increases. This claim is supported by Experiment E5, which generated Figure 9 and demonstrates this trend.
 
 
 
@@ -19,7 +20,8 @@ To run the experiment supporting this claim, first change the directory to ./Cla
 
 Verification:
 
-You can compare the results with Figure 9 in the paper or with the pre-generated figures provided in Claims/Claim5/expected/. The latter is preferable since it was produced using the current artifact with a reduced number of iterations, yielding outputs more consistent with those obtained when running the artifact.  
+You can compare the results with Figure 9 in the paper or with the pre-generated figures provided in Claims/Claim5/expected/. 
+The latter is preferable since it was produced using the current artifact with a reduced number of iterations, yielding outputs more consistent with those obtained when running the artifact.  
 
 
 
