@@ -103,8 +103,11 @@ Claims
 │   └── run_E_T.sh           # Script to run Table 1  experiment
 │
 ├── install.sh               # Installation script for environment setup
-├── LICENSE                  # License information
-└── README.md                # Project overview & instructions
+├── LICENSE                  # License information  
+├── README.md                # Project overview & instructions
+├── requirements.txt         # Provides the required argument used by install.sh for installing the dependencies at
+                              the beginning of running the artifact.
+└── use.txt	                 # Intended use + limitations
 
 
 ```
