@@ -5,7 +5,7 @@ This experiment does not support any specific claim in the paper and is included
 
 How to reproduce:
 
-To run the experiment supporting this claim, first change the directory to ./Claims/Claim_T/. You can then reproduce this experiment in one of two ways:  
+To run the experiment, first change the directory to ./Claims/Claim_T/. You can then reproduce this experiment in one of two ways:  
 
 1. From the command line, run: bash ./run_E_T.sh  to execute the experiment directly.  
 
@@ -42,9 +42,6 @@ You can compare the results with Table 1 in the paper or with the reference tabl
 +-------------------+-----------------+------------------+-----------------+------------------+--------------+---------------+-------------+--------------+
 | DPR, CDA          |              51 |               14 |             3.4 |              0.7 |         66.6 |          49.5 |        0.11 |         0.01 |
 +-------------------+-----------------+------------------+-----------------+------------------+--------------+---------------+-------------+--------------+
-
-
-
 
 
 
