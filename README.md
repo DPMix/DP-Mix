@@ -101,7 +101,7 @@ Claims
 │
 ├── Claim_T
 │   ├── claim.txt            # Text description of ruining experiments leading to generating Table 1 
-│   └── run_E_T.sh           # Script to run Table 1  experiment
+│   └── run_E_T.sh           # Script to run Table 1 experiment
 │
 ├── install.sh               # Installation script for environment setup
 ├── LICENSE                  # License information  
