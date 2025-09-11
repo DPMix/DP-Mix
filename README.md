@@ -27,6 +27,91 @@ However, to install all requirements automatically, you only need to run the fol
 
 
 
+# Project Structure
+
+```text
+.
+artifact
+├── dataset.pkl                                   # Dataset used in DP-Mix (including NYM and RIPE data)
+├── DPMIX_Functions.py                            # This .py file includes all the functions needed to directly run the main
+                                                    experiments of DP-Mix  and generates the corresponding figures.
+├── DPMIX.py                                      # DPMIX.py contains a comprehensive set of functions for analyzing DP-Mix.
+├── FCP_Functions.py                              # This .py file includes strategies that a mixnode adversary might consider
+                                                    when corrupting mindnodes in mixnets.
+├── Main.py                                       # This file provides instructions regarding how to run the experiments described
+                                                    in the main body of the paper.
+├── Message_Genartion_and_mix_net_processing_.py  # This Python file, on behalf of clients, generates the messages to be sent
+                                                    to the mixnet.
+├── Message_.py                                   # Simulates the messages generated and sent by the clients.
+├── Mix_Node_.py                                  # Simulates using discrete event simulation, a mixnode in mixnets.
+├── NYM.py                                        # This .py file provides the main simulation components necessary to simulate
+                                                     a mixnet as used in DP-Mix.
+├── PLOTTER.py                                    # To plot the figures.
+├── Routing.py                                    # This function helps to model the routing approaches in DP-Mix.
+└── Sim.py                                        # This .py file also includes the necessary simulation components
+                                                    for reproducing simulations of DP-Mix.
+
+Claims
+├── Claim1
+│   ├── claim.txt            # Text description of Claim 1
+│   ├── expected             # Expected results/figures for Claim 1
+│   │   ├── Fig_5a.png       # Expected figure 5a
+│   │   ├── Fig_5b.png       # Expected figure 5b
+│   │   ├── Fig_5c.png       # Expected figure 5c
+│   │   └── Fig_5d.png       # Expected figure 5d
+│   └── run_E_1.sh           # Script to run experiment for Claim 1
+│
+├── Claim2
+│   ├── claim.txt            # Text description of Claim 2
+│   ├── expected             # Expected results/figures for Claim 2
+│   │   ├── Fig_6a.png
+│   │   ├── Fig_6b.png
+│   │   ├── Fig_6c.png
+│   │   └── Fig_6d.png
+│   └── run_E_2.sh           # Script to run experiment for Claim 2
+│
+├── Claim3
+│   ├── claim.txt            # Text description of Claim 3
+│   ├── expected             # Expected results/figures for Claim 3
+│   │   ├── Fig_7a.png
+│   │   ├── Fig_7b.png
+│   │   ├── Fig_7c.png
+│   │   └── Fig_7d.png
+│   └── run_E_3.sh           # Script to run experiment for Claim 3
+│
+├── Claim4
+│   ├── claim.txt            # Text description of Claim 4
+│   ├── expected             # Expected results/figures for Claim 4
+│   │   ├── Fig_8a.png
+│   │   ├── Fig_8b.png
+│   │   ├── Fig_8c.png
+│   │   └── Fig_8d.png
+│   └── run_E_4.sh           # Script to run experiment for Claim 4
+│
+├── Claim5
+│   ├── claim.txt            # Text description of Claim 5
+│   ├── expected             # Expected results/figures for Claim 5
+│   │   ├── Fig_9a.png
+│   │   ├── Fig_9b.png
+│   │   ├── Fig_9c.png
+│   │   └── Fig_9d.png
+│   └── run_E_5.sh           # Script to run experiment for Claim 5
+│
+├── Claim_T
+│   ├── claim.txt            # Text description of ruining experiments leading to generating Table 1 
+│   └── run_E_T.sh           # Script to run Table 1  experiment
+│
+├── install.sh               # Installation script for environment setup
+├── LICENSE                  # License information
+└── README.md                # Project overview & instructions
+
+
+```
+
+
+
+
+
 
 # Evaluation Workflow
 
@@ -156,7 +241,32 @@ Note that this experiment does not support any specific claim but is included fo
 
 `bash ./run_E_T.sh`  
 
-- After execution, the results will be shown in the terminal, as illustrated below.
+
+
+
+
 
 <img width="1330" height="359" alt="image" src="https://github.com/user-attachments/assets/00ff05ea-68bb-405d-824d-50e6e653a353" />
+
+
+
+
+
+
+
+## Additional Notes
+
+- After running each experiment, the corresponding figures will be automatically saved in the "Figures" folder, and the corresponding tables in the "Tables" folder. In case LaTeX is not installed, table results will be printed directly in the terminal.
+    
+- For each experiment, we provide default parameter values—such as the number of iterations—in `config.py` to ensure reproducibility of results similar to those reported in the paper. All values match the original setup used in the paper, except for the number of iterations. These values can be modified by users as needed. Specifically, increasing the number of iterations enhances accuracy and reduces sampling errors, but at the cost of increased execution time. For practical purposes and to ensure the artifact remains runnable on standard hardware, we set the default number of iterations to 5.
+
+
+- If the following warnings appear during execution, you can safely ignore them:
+       
+    1) RuntimeWarning: Mean of empty slice. out=out, **kwargs
+
+    2) invalid value encountered in scalar divide ret = ret.dtype.type(ret / rcount)
+
+## Hardware Requirements
+The code is tested to run on commodity hardware with 16 GB RAM, 8 cores, and 50 GB hard disk storage.
 
