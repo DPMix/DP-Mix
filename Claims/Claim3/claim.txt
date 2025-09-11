@@ -25,4 +25,4 @@ You can compare the results with Figure 7 in the paper or with the pre-generated
 
 Runtime:
 
-This experiment requires less than 10 minutes to complete.
+This experiment requires less than 15 minutes to complete.
