@@ -147,7 +147,7 @@ Alternatively, the pre-generated figures provided in `./Claims/Claim5/expected/`
 
 
 
-## E5: [Table 1] [20 min]  
+## E*: [Table 1] [20 min]  
 
 Note that this experiment does not support any specific claim but is included for completeness, ensuring that Table 1 in the paper is reproducible. Together with the previous experiments, this makes all experiments in the paper reproducible.  
 
