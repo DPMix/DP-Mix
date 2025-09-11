@@ -122,15 +122,15 @@ Claims
 
 ## Major Claims
 
-- **(C1):** The first claim concerns the trend shown in Figure 5. Across all settings and scenarios, when the variable on the x-axis (the privacy parameter \( \varepsilon \)) increases, the corresponding latency decreases. This claim is supported by Experiment E1, which generated Figure 5 and demonstrates this trend. See `./Claims/Claim1/claim.txt` for more details.  
+- **(C1):** The first claim concerns the trend shown in Figure 5. Across all settings and scenarios, when the variable on the x-axis (the privacy parameter \( \varepsilon \)) increases, the corresponding latency decreases. This claim is supported by Experiment E1, which generates Figure 5 and demonstrates this trend. See `./Claims/Claim1/claim.txt` for more details.  
 
-- **(C2):**  This claim concerns the trend shown in Figure 6. Across all settings and scenarios, when the variable on the x-axis (the privacy parameter \( \varepsilon \)) increases, the corresponding entropy decreases. This claim is supported by Experiment E2, which generated Figure 6 and demonstrates this trend. See `./Claims/Claim2/claim.txt` for more details.  
+- **(C2):**  This claim concerns the trend shown in Figure 6. Across all settings and scenarios, when the variable on the x-axis (the privacy parameter \( \varepsilon \)) increases, the corresponding entropy decreases. This claim is supported by Experiment E2, which generates Figure 6 and demonstrates this trend. See `./Claims/Claim2/claim.txt` for more details.  
 
-- **(C3):**  This claim concerns the trend shown in Figure 7. Across all settings and scenarios, when the variable on the x-axis (the privacy parameter \( \varepsilon \)) increases, the entropy of messages shown on the y-axis decreases. This claim is supported by Experiment E3, which generated Figure 7 and demonstrates this trend. See `./Claims/Claim3/claim.txt` for more details.  
+- **(C3):**  This claim concerns the trend shown in Figure 7. Across all settings and scenarios, when the variable on the x-axis (the privacy parameter \( \varepsilon \)) increases, the entropy of messages shown on the y-axis decreases. This claim is supported by Experiment E3, which generates Figure 7 and demonstrates this trend. See `./Claims/Claim3/claim.txt` for more details.  
 
-- **(C4):** This claim concerns the trend shown in Figure 8. Across all settings and scenarios, when the variable on the x-axis (the privacy parameter \( \varepsilon \)) increases, the fraction of corrupted paths (FCP) shown on the y-axis increases. This claim is supported by Experiment E4, which generated Figure 8 and demonstrates this trend. See `./Claims/Claim4/claim.txt` for more details.  
+- **(C4):** This claim concerns the trend shown in Figure 8. Across all settings and scenarios, when the variable on the x-axis (the privacy parameter \( \varepsilon \)) increases, the fraction of corrupted paths (FCP) shown on the y-axis increases. This claim is supported by Experiment E4, which generates Figure 8 and demonstrates this trend. See `./Claims/Claim4/claim.txt` for more details.  
 
-- **(C5):** This claim concerns the trend shown in Figure 9. Across all settings and scenarios, when the variable on the x-axis (the adversary budget \( C/N \)) increases, the fraction of corrupted paths (FCP) shown on the y-axis increases. This claim is supported by Experiment E5, which generated Figure 9 and demonstrates this trend. See `./Claims/Claim5/claim.txt` for more details.
+- **(C5):** This claim concerns the trend shown in Figure 9. Across all settings and scenarios, when the variable on the x-axis (the adversary budget \( C/N \)) increases, the fraction of corrupted paths (FCP) shown on the y-axis increases. This claim is supported by Experiment E5, which generates Figure 9 and demonstrates this trend. See `./Claims/Claim5/claim.txt` for more details.
 
 
 
@@ -146,7 +146,7 @@ Claims
 
 `bash ./run_E_1.sh`  
 
-- After execution, the results will be saved as **Fig_5a.png**, **Fig_5b.png**, **Fig_9c.png**, and **Fig_9d.png** in the `artifact/Figures/` directory.  
+- After execution, the results will be saved as **Fig_5a.png**, **Fig_5b.png**, **Fig_5c.png**, and **Fig_5d.png** in the `artifact/Figures/` directory.  
 
 - Verification:  
 You can compare the results with Figure 5 in the paper (shown below). Please note, however, that the experiment may not reproduce exactly the same figures due to adjustments made for execution on a personal laptop or Google Colab (e.g., fewer iterations or modified parameters). For verification, focus on the claim itself, particularly the observed trends—increasing or decreasing values along the x-axis.  
@@ -218,7 +218,7 @@ Alternatively, the pre-generated figures provided in `./Claims/Claim4/expected/`
 
 
 
-## E5: [Reproducing Fig. 9; verifying Claim C9] [15 min]  
+## E5: [Reproducing Fig. 9; verifying Claim C5] [15 min]  
 
 - To run this experiment, it is important to first change the directory to `./Claims/Claim5/`. You can then reproduce this experiment by running:  
 
