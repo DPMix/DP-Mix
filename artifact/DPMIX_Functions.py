@@ -40,7 +40,7 @@ class DP_Mix(object):
         self.L = 3
         self.base = 2
         self.delay1 = 0.018
-        self.delay2 = 0.0001/1
+        self.delay2 = 0.0001
         self.Capacity = 10000000000000000000000000000000000000000000000000000000000000000
         self.num_targets = 200
         self.Iterations = 2
