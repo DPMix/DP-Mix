@@ -23,7 +23,8 @@ However, to install all requirements automatically, you only need to run the fol
 
 `bash install.sh`
 
-
+## Hardware Requirements
+The code has been tested to run on standard hardware with 16 GB of RAM, 8 cores, and 50 GB of hard disk storage. Alternatively, you can use Google Colab to run this application. For this, you will need a Google account. Once signed in, you can clone the Git repository for free and start running the code based on the expected structure.
 
 
 
@@ -256,17 +257,33 @@ Note that this experiment does not support any specific claim but is included fo
 
 ## Additional Notes
 
-- After running each experiment, the corresponding figures will be automatically saved in the "Figures" folder, and the corresponding tables in the "Tables" folder. In case LaTeX is not installed, table results will be printed directly in the terminal.
-    
-- For each experiment, we provide default parameter values—such as the number of iterations—in `config.py` to ensure reproducibility of results similar to those reported in the paper. All values match the original setup used in the paper, except for the number of iterations. These values can be modified by users as needed. Specifically, increasing the number of iterations enhances accuracy and reduces sampling errors, but at the cost of increased execution time. For practical purposes and to ensure the artifact remains runnable on standard hardware, we set the default number of iterations to 5.
+- This artifact has been created to reproduce the results presented in the paper “DP-Mix: Differentially Private Routing in Mix Networks”, accepted for publication at ACSAC 2025, and to provide an environment that makes the code usable for future research. You can execute the code on any standard laptop or workstation running Ubuntu 18.04 or higher. It is compatible with Python 3.8.10. Alternatively, the repository can be cloned and executed in a Google Colab environment.  
+
+- Importantly, the artifact includes precisely the same configurations and settings used in the original DP-Mix evaluation. The only exception is that the number of iterations and some minor parameters have been scaled down to ensure feasibility on standard hardware. These configuration parameters can be reviewed and, where appropriate, modified in the initialization of `DP_Mix_Functions.py`. This adjustment ensures that the artifact remains practical for local execution, while still supporting future extensions where researchers may wish to adapt our approach to scenarios not explicitly tested in DP-Mix.  
+
+- That said, modifying parameters requires a deeper understanding of mixnets. Mixnets are complex systems in which changes to a single parameter may influence others. In many cases, certain parameter combinations may be incompatible or may significantly affect the overall results. Additionally, several parameters are initialized based on prior work, and their default values were chosen to support meaningful comparisons. As such, arbitrary modifications may not yield valid outcomes.  
+
+- However, the following parameters in the initialization of `DP_Mix_Functions.py` can be safely modified within specific intervals:  
+
+1- `self.Iterations`: can be increased up to 30 to improve accuracy; note that this change increases computational cost exponentially.
+  
+2- `self.num_targets`: specifies the number of target messages in the simulations; can be set to any integer in [20,200].  
+
+3- `self.run`: defines the duration of each simulation time slot; can be set to any real value in [0.05,1.0]. 
+ 
+4- `self.delay1`: represents the average delay imposed on each message upon entering mixnodes; can be set to any real value in [0.01,0.08]. 
+ 
+
+- Other parameters should not be modified, as they are tied to fixed design assumptions in mixnets. Altering them may lead to execution errors or invalid experimental results. If users wish to modify such parameters, we recommend contacting the authors directly for further guidance. 
 
 
-- If the following warnings appear during execution, you can safely ignore them:
-       
-    1) RuntimeWarning: Mean of empty slice. out=out, **kwargs
+ 
 
-    2) invalid value encountered in scalar divide ret = ret.dtype.type(ret / rcount)
+- Execution notes: If the following warnings appear during execution, they can be safely ignored:  
+```text
+1) Gdk-CRITICAL **: 13:07:09.758: gdk_cursor_new_for_display: assertion 'GDK_IS_DISPLAY (display)' failed 
 
-## Hardware Requirements
-The code is tested to run on commodity hardware with 16 GB RAM, 8 cores, and 50 GB hard disk storage.
+2) UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+```
+
 
