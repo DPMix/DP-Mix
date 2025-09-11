@@ -1,7 +1,7 @@
 Claim 3: 
  
 This claim concerns the trend shown in Figure 7. Across all settings and scenarios, when the variable on the x-axis (the privacy parameter \( \varepsilon \)) increases, 
-the entropy of messages shown on the y-axis decreases. This claim is supported by Experiment~E3, which generated Figure~7 and demonstrates this trend.
+the entropy of messages shown on the y-axis decreases. This claim is supported by Experiment E3, which generated Figure 7 and demonstrates this trend.
 
 
 
