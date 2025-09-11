@@ -27,4 +27,4 @@ The latter is preferable since it was produced using the current artifact with a
 
 Runtime:
 
-This experiment requires less than 15 minutes to complete.
+This experiment requires less than 20 minutes to complete.
