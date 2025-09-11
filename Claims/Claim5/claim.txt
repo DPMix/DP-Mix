@@ -21,7 +21,8 @@ To run the experiment supporting this claim, first change the directory to ./Cla
 Verification:
 
 You can compare the results with Figure 9 in the paper or with the pre-generated figures provided in Claims/Claim5/expected/. 
-The latter is preferable since it was produced using the current artifact with a reduced number of iterations, yielding outputs more consistent with those obtained when running the artifact.  
+The latter is preferable since it was produced using the current artifact with a reduced number of iterations, 
+yielding outputs more consistent with those obtained when running the artifact.  
 
 
 
