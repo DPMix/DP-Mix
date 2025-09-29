@@ -1,6 +1,7 @@
 Claim 1: 
  
-The first claim concerns the trend shown in Figure 5. Across all settings and scenarios, when the variable on the x-axis (the privacy parameter \( \varepsilon \)) increases, the corresponding latency decreases. This claim is supported by Experiment E1, which generated Figure 5 and demonstrates this trend.  
+The first claim concerns the trend shown in Figure 5.  Across all settings and scenarios, as the variable on the x-axis—the privacy parameter \( \varepsilon \)—increases, the corresponding latency (Figures 5a and 5b) decreases, while reliability and the number of jurisdictions (Figures 5c and 5d) increase.
+ This claim is supported by Experiment E1, which generated Figure 5 and demonstrates this trend.  
 
 
 
